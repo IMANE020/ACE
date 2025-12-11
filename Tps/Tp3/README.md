@@ -29,5 +29,6 @@ Le projet inclut :
 
 > Le schéma ci-dessous illustre le fonctionnement interne de Spring Data REST.  
 
-<img width="3849" height="346" alt="tp3_readme" src="https://github.com/user-attachments/assets/100ec1c1-d2a5-4290-b7e8-73413561d32d" />
 
+
+<img width="6674" height="602" alt="tp3_readme" src="https://github.com/user-attachments/assets/43ce5148-f586-4925-bbe5-353b635ef098" />
