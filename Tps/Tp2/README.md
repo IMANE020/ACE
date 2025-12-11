@@ -23,4 +23,4 @@ Le projet inclut : validation, gestion dâ€™erreurs, tests unitaires et tests dâ€
 
 
 
-<img width="600" height="300" alt="Tp2_readme" src="https://github.com/user-attachments/assets/0c7a1aae-5402-4106-bcf2-c7ed6e227ab0" />
+<img width="2789" height="1405" alt="Tp2_readme" src="https://github.com/user-attachments/assets/e7ccc677-80cc-45cf-b4cb-345e598a9dee" />
