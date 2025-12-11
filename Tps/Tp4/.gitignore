@@ -1,0 +1,32 @@
+# IDE
+.idea/
+*.iml
+*.iws
+
+# Build
+target/
+build/
+out/
+*.class
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# H2 Database
+*.mv.db
+*.trace.db
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
