@@ -16,34 +16,63 @@ Application web complète de gestion bancaire développée avec **Spring Boot** 
 - **Création de comptes bancaires** avec génération de RIB
 - **Opérations de dépôt/retrait** sur les comptes clients
 
-<img width="1172" height="831" alt="img1" src="https://github.com/user-attachments/assets/d5d34ba6-a1b5-49db-b2ac-cf03b5a6d89b" />
+<img width="1172" height="831" alt="img1" src="https://github.com/user-attachments/assets/53d27569-ec8b-411f-8889-f9ea38a3839b" />
 
 *Formulaire d'ajout d'un nouveau client*
 
-<img width="1182" height="621" alt="img3" src="https://github.com/user-attachments/assets/37fa72f6-7563-4f5b-8be0-cf0a55820172" />
+<img width="1182" height="621" alt="img3" src="https://github.com/user-attachments/assets/97d54cd9-3f41-4657-94ad-b16f9affca47" />
 
 *Création d'un nouveau compte bancaire*
 
-<img width="1176" height="693" alt="img5" src="https://github.com/user-attachments/assets/3b8c9d01-aaf1-46d2-9c36-0ba4435a7a7b" />
+### 💰 Gestion des Opérations Bancaires
+Les agents peuvent effectuer des **dépôts** et **retraits** sur les comptes clients. Chaque opération est immédiatement enregistrée et visible dans le tableau de bord du client.
 
-*Interface de dépôt et retrait d'espèces*
+<img width="1176" height="693" alt="img5" src="https://github.com/user-attachments/assets/3ef9c466-6dab-4990-a2bc-44104ce19ddf" />
 
-### 👤 Espace Client
-- **Tableau de bord** avec solde et RIB
-- **Historique des 10 dernières opérations**
-- **Effectuer des virements** vers d'autres comptes
+*Interface de dépôt et retrait d'espèces par l'agent*
 
-<img width="1177" height="511" alt="img6" src="https://github.com/user-attachments/assets/5153e2a3-7972-47cd-9b27-76a48827184c" />
+<img width="1182" height="702" alt="Retrait" src="https://github.com/user-attachments/assets/49398904-9e32-44c6-bfd9-cfc9c7216dff" />
+*Confirmation de retrait effectué avec succès*
 
-*Tableau de bord client avec historique des opérations*
+### 👤 Espace Client - Suivi en Temps Réel
+Les clients peuvent consulter leur **tableau de bord** qui affiche en temps réel :
+- Leur solde actuel
+- Leur RIB
+- Les **10 dernières opérations** (virements, dépôts, retraits)
 
-<img width="1187" height="585" alt="img9" src="https://github.com/user-attachments/assets/c83102a9-edb7-45fa-aad6-39bbcfa21fa2" />
+Chaque opération effectuée par l'agent (dépôt/retrait) ou par le client (virement) apparaît immédiatement dans l'historique avec :
+- **Intitulé** de l'opération
+- **Type** (CRÉDIT/DÉBIT)
+- **Date** précise
+- **Montant** (+ pour les crédits, - pour les débits)
+
+<img width="1177" height="511" alt="img6" src="https://github.com/user-attachments/assets/b1c3b87c-427d-49a2-81c7-51dc2c850417" />
+
+*Tableau de bord client avec solde et historique*
+
+<img width="1196" height="610" alt="notif_client" src="https://github.com/user-attachments/assets/f21c3a87-0b89-4d34-94ef-27913c98baef" />
+
+*Historique mis à jour après retrait et virement - notez les opérations DEBIT*
+
+### 💸 Virements entre Comptes
+Les clients peuvent effectuer des virements vers d'autres comptes. Le système vérifie automatiquement :
+- Le solde disponible
+- La validité du compte
+- L'état du compte (non bloqué)
+
+<img width="1187" height="585" alt="img9" src="https://github.com/user-attachments/assets/9a9080f5-6ecd-41eb-b5b2-bd37927eafc3" />
 
 *Formulaire pour effectuer un virement*
 
-<img width="1197" height="557" alt="img10" src="https://github.com/user-attachments/assets/cee78ac2-de61-4cc2-992b-f2f38070544b" />
+****<img width="1197" height="557" alt="img10" src="https://github.com/user-attachments/assets/a42640b1-2f2f-40a8-8e75-1e60d02da129" />
+*Mise à jour du solde et de l'historique après virement*
 
-*Mise à jour du solde après virement*
+## 🔄 Flux des Opérations
+
+1. **Agent effectue un dépôt/retrait** → Opération enregistrée
+2. **Client consulte son dashboard** → Opération visible immédiatement
+3. **Client effectue un virement** → Solde mis à jour en temps réel
+4. **Historique** → Toutes les opérations tracées avec date et heure
 
 ## 🛠️ Architecture Technique
 
@@ -86,6 +115,7 @@ Changement Mot de passe:
 Notification Succès:
 <img width="1176" height="447" alt="img8" src="https://github.com/user-attachments/assets/dcd023d6-af3a-4d45-a509-792182085135" />
 
+
 ## 🔒 Sécurité
 
 - Authentification JWT avec expiration automatique
@@ -100,6 +130,8 @@ Notification Succès:
 - ✅ Traçabilité complète des opérations
 - ✅ Envoi d'emails automatisés
 - ✅ Gestion des statuts de comptes
+- ✅ Mise à jour en temps réel des soldes
+- ✅ Historique détaillé des transactions
 
 ## 👥 Profils de Test
 
@@ -110,6 +142,10 @@ Notification Succès:
 **Client:**
 - Login: `Test@gmail.com`
 - Mot de passe: `654321`
+
+## 📞 Support
+
+Pour toute question : **hamalousssama@research.emi.ac.ma**
 
 ---
 
