@@ -143,9 +143,9 @@ Notification Succès:
 - Login: `Test@gmail.com`
 - Mot de passe: `654321`
 
-## 📞 Support
+## 📞 Binome
+Tayeb Imane @ El-Attary Assia 
 
-Pour toute question : **hamalousssama@research.emi.ac.ma**
 
 ---
 
