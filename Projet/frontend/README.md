@@ -1,4 +1,3 @@
-```markdown
 # Frontend - eBank Application (React)
 
 ## Description
