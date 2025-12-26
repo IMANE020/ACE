@@ -28,7 +28,6 @@ Application web complète de gestion bancaire développée avec **Spring Boot** 
 Les agents peuvent effectuer des **dépôts** et **retraits** sur les comptes clients. Chaque opération est immédiatement enregistrée et visible dans le tableau de bord du client.
 
 <img width="1176" height="693" alt="img5" src="https://github.com/user-attachments/assets/3ef9c466-6dab-4990-a2bc-44104ce19ddf" />
-
 *Interface de dépôt et retrait d'espèces par l'agent*
 
 <img width="1182" height="702" alt="Retrait" src="https://github.com/user-attachments/assets/49398904-9e32-44c6-bfd9-cfc9c7216dff" />
