@@ -1,0 +1,342 @@
+/* Login.css */
+
+/* Animation de fond */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8A2BE2 0%, #4B0082 25%, #9370DB 50%, #8A2BE2 75%, #4B0082 100%);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Éléments décoratifs */
+.login-container::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  top: -150px;
+  left: -150px;
+  animation: float 20s ease-in-out infinite;
+}
+
+.login-container::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  bottom: -100px;
+  right: -100px;
+  animation: float 25s ease-in-out infinite reverse;
+}
+
+/* Carte de login */
+.login-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icône de la banque */
+.login-card::before {
+  content: "🏦";
+  font-size: 60px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #8A2BE2 0%, #4B0082 100%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 10px 30px rgba(138, 43, 226, 0.3);
+  animation: pulse 3s ease-in-out infinite;
+}
+
+/* Titres */
+.login-card h1 {
+  color: #4B0082;
+  margin: 30px 0 10px;
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  background: linear-gradient(135deg, #8A2BE2 0%, #4B0082 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.login-card h2 {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Groupes de formulaire */
+.form-group {
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #4B0082;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Conteneur d'input avec icône */
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon i {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8A2BE2;
+  font-size: 20px;
+  z-index: 1;
+}
+
+/* Inputs */
+.form-group input {
+  width: 100%;
+  padding: 18px 18px 18px 56px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background: #f8f9ff;
+  color: #333;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #8A2BE2;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(138, 43, 226, 0.15);
+  transform: translateY(-2px);
+}
+
+.form-group input::placeholder {
+  color: #aaa;
+}
+
+/* Icônes spécifiques */
+.form-group:nth-child(1) .input-with-icon i {
+  color: #8A2BE2;
+}
+
+.form-group:nth-child(2) .input-with-icon i {
+  color: #4B0082;
+}
+
+/* Bouton de connexion */
+.btn-block {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(135deg, #8A2BE2 0%, #4B0082 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  letter-spacing: 0.5px;
+}
+
+.btn-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: 0.5s;
+}
+
+.btn-block:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(138, 43, 226, 0.4);
+}
+
+.btn-block:hover::before {
+  left: 100%;
+}
+
+.btn-block:active {
+  transform: translateY(-1px);
+}
+
+.btn-block i {
+  font-size: 20px;
+}
+
+/* Message d'erreur */
+.error-message {
+  background: linear-gradient(135deg, #ff4757 0%, #ff3838 100%);
+  color: white;
+  padding: 16px;
+  border-radius: 10px;
+  margin: 24px 0;
+  animation: slideInLeft 0.4s ease;
+  box-shadow: 0 4px 12px rgba(255, 71, 87, 0.2);
+  text-align: center;
+  font-weight: 500;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Effets de focus améliorés */
+.form-group:focus-within label {
+  color: #8A2BE2;
+}
+
+/* Animation de chargement */
+@keyframes loading {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px solid white;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: loading 0.8s linear infinite;
+  right: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 15px;
+  }
+  
+  .login-card {
+    padding: 40px 25px;
+    margin-top: 40px;
+  }
+  
+  .login-card::before {
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+  }
+  
+  .login-card h1 {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  
+  .form-group input {
+    padding: 16px 16px 16px 50px;
+    font-size: 15px;
+  }
+  
+  .btn-block {
+    padding: 16px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 30px 20px;
+  }
+  
+  .login-card h1 {
+    font-size: 24px;
+  }
+  
+  .login-card h2 {
+    font-size: 14px;
+  }
+}
