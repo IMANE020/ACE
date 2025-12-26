@@ -121,18 +121,10 @@ L'interface s'inspire des applications bancaires modernes (ex : Banque Populaire
 
 ---
 
-**Backend correspondant** : [Lien vers le dépôt backend Spring Boot](https://github.com/votre-repo/ebank-backend)
+**Backend correspondant** : [Lien vers le dépôt backend Spring Boot](Projet/backend)
 
-**Auteurs** : [Vos noms]
+**Auteurs** : Iman Tayb & Assia El-Attary
 
 **Date de livraison** : Décembre 2025
 ```
 
-**Points clés corrigés :**
-1. **Structure de projet** : Utilisation de blocs de code avec triples backticks pour l'arborescence
-2. **Installation** : Commandes bash correctement isolées dans leurs propres blocs
-3. **Formatage** : Sauts de ligne appropriés entre les sections
-4. **Uniformité** : Même style de titres (##, ###) dans tout le document
-5. **Corrections** : "JMT" corrigé en "JWT", "AGENT_GUICNET" corrigé en "AGENT_GUICHET"
-
-Le document est maintenant propre, bien structuré et facile à lire.
