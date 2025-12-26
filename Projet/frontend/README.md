@@ -121,9 +121,9 @@ L'interface s'inspire des applications bancaires modernes (ex : Banque Populaire
 
 ---
 
-** ⚙️ Backend correspondant** : [Lien vers le dépôt backend Spring Boot]([Projet/backend](https://github.com/IMANE020/ACE/tree/main/Projet/backend))
+**⚙️ Backend correspondant** : [Lien vers le dépôt backend Spring Boot]([Projet/backend](https://github.com/IMANE020/ACE/tree/main/Projet/backend))
 
 **👥 Auteurs** : Iman Tayb & Assia El-Attary
 
-** 📅 Date de livraison** : Décembre 2025
+**📅 Date de livraison** : Décembre 2025
 
