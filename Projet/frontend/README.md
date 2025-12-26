@@ -1,10 +1,10 @@
-# Frontend - eBank Application (React)
+# 🎨 Frontend - eBank Application (React)
 
-## Description
+## 📋 Description
 
 Frontend développé avec React pour l'application bancaire **eBank**, offrant des fonctionnalités de gestion bancaire sécurisées pour deux profils utilisateurs : **CLIENT** et **AGENT_GUICHET**.
 
-## Technologies Utilisées
+## ⚙️ Technologies Utilisées
 
 - **React 18**
 - **React Router DOM 6** (pour la navigation)
@@ -12,7 +12,7 @@ Frontend développé avec React pour l'application bancaire **eBank**, offrant d
 - **Context API** (pour la gestion d'état global d'authentification)
 - **CSS Modules** (pour le style modulaire)
 
-## Structure du Projet
+## 🏗️ Structure du Projet
 
 ```
 FRONTEND/
@@ -37,7 +37,7 @@ FRONTEND/
 └── README.md
 ```
 
-## Installation
+## 📦 Installation
 
 ```bash
 npm install
@@ -55,8 +55,7 @@ L'application sera accessible à l'adresse : [http://localhost:3000](http://loca
 
 Le frontend est configuré pour communiquer avec le backend Spring Boot via un proxy défini dans `package.json` (port par défaut : `8080`).
 
-## <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/d1eba85d-e9cd-43e7-a8b4-857b5e983766" />
-Pages et Fonctionnalités
+## 📄 Pages et Fonctionnalités
 
 ### 1. **Login** (`/login`)
 - Authentification des utilisateurs (CLIENT / AGENT_GUICHET)
@@ -107,7 +106,7 @@ Pages et Fonctionnalités
 ### RG_12 : Solde suffisant
 - Validation du montant du virement par rapport au solde
 
-## Sécurité
+## 🔐 Sécurité
 
 - Toutes les routes (sauf `/login`) sont protégées par authentification
 - Vérification des rôles (CLIENT / AGENT_GUICHET) pour l'accès aux fonctionnalités
