@@ -33,13 +33,16 @@ Application web complète de gestion bancaire développée avec **Spring Boot** 
 - **Historique des 10 dernières opérations**
 - **Effectuer des virements** vers d'autres comptes
 
-![Tableau de Bord Client](img6.png)
+<img width="1177" height="511" alt="img6" src="https://github.com/user-attachments/assets/5153e2a3-7972-47cd-9b27-76a48827184c" />
+
 *Tableau de bord client avec historique des opérations*
 
-![Formulaire de Virement](img9.png)
+<img width="1187" height="585" alt="img9" src="https://github.com/user-attachments/assets/c83102a9-edb7-45fa-aad6-39bbcfa21fa2" />
+
 *Formulaire pour effectuer un virement*
 
-![Historique après Virement](img10.png)
+<img width="1197" height="557" alt="img10" src="https://github.com/user-attachments/assets/cee78ac2-de61-4cc2-992b-f2f38070544b" />
+
 *Mise à jour du solde après virement*
 
 ## 🛠️ Architecture Technique
@@ -74,10 +77,14 @@ npm start
 *Application accessible sur http://localhost:3000*
 
 ## 📱 Captures d'Écran
+Page de Connexion: 
+<img width="970" height="730" alt="img11" src="https://github.com/user-attachments/assets/ff62131a-fe5f-4855-b14e-e47cbe3533f9" />
 
-| Page de Connexion | Changement Mot de Passe | Notification Succès |
-|-------------------|-------------------------|---------------------|
-| ![Login](img11.png) | ![Change Password](img7.png) | ![Success](img2.png) |
+Changement Mot de passe:
+<img width="1210" height="450" alt="img7" src="https://github.com/user-attachments/assets/16d61d8c-61dc-42bd-8b2e-7d17f8f99def" />
+
+Notification Succès:
+<img width="1176" height="447" alt="img8" src="https://github.com/user-attachments/assets/dcd023d6-af3a-4d45-a509-792182085135" />
 
 ## 🔒 Sécurité
 
