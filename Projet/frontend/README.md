@@ -42,6 +42,7 @@ npm install
 Lancement en Développement
 bash
 npm start
+
 L'application sera accessible à l'adresse : http://localhost:3000
 
 Configuration
