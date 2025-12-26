@@ -55,7 +55,8 @@ L'application sera accessible à l'adresse : [http://localhost:3000](http://loca
 
 Le frontend est configuré pour communiquer avec le backend Spring Boot via un proxy défini dans `package.json` (port par défaut : `8080`).
 
-## Pages et Fonctionnalités
+## <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/d1eba85d-e9cd-43e7-a8b4-857b5e983766" />
+Pages et Fonctionnalités
 
 ### 1. **Login** (`/login`)
 - Authentification des utilisateurs (CLIENT / AGENT_GUICHET)
