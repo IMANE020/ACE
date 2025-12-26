@@ -322,7 +322,7 @@ INSERT INTO clients (id, cin, first_name, last_name, email, address, birth_date,
 
 ---
 
-**🎨 Frontend correspondant** : [Lien vers le dépôt frontend React](../frontend)
+**🎨 Frontend correspondant** : [Lien vers le dépôt frontend React](https://github.com/IMANE020/ACE/tree/main/Projet/frontend)
 
 **👥 Auteurs** : Imane Tayb & Assia El-Attary
 
