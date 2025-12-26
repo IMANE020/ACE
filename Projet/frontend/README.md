@@ -84,7 +84,7 @@ Le frontend est configuré pour communiquer avec le backend Spring Boot via un p
 - Changement de mot de passe utilisateur
 - Validation côté frontend et backend
 
-## Système d'Authentification
+## 👤 Système d'Authentification
 
 - Utilisation de **JWT (JSON Web Token)** pour la sécurisation des sessions
 - Token stocké dans le `localStorage`
@@ -92,7 +92,7 @@ Le frontend est configuré pour communiquer avec le backend Spring Boot via un p
 - Protection des routes via `ProtectedRoute.js`
 - Gestion des erreurs d'autorisation et d'expiration de session
 
-## Règles Métier Implémentées (Frontend)
+## 📏 Règles Métier Implémentées (Frontend)
 
 ### RG_2 : Login ou mot de passe erronés
 - Affichage d'un message d'erreur en cas d'échec d'authentification
